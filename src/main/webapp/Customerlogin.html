@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Car Rental Login</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.login-container {
+    width: 350px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>Car Rental System</h1>
+        <h2>Customer Login</h2>
+
+        <form action="customerhome" method="get">
+
+            <input type="tel"
+                   name="mobile"
+                   placeholder="Enter Mobile Number"
+                   required>
+
+            <input type="password"
+                   name="password"
+                   placeholder="Enter Password"
+                   required>
+
+            <br>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <hr>
+
+        <p>New Customer?</p>
+
+        <a href="register.html">
+            <button type="button">Create/Register Customer</button>
+        </a>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Car Rental System</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)
+                ),
+                url("https://images.unsplash.com/photo-1503376780353-7e6692767b70")
+                center/cover no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(10px);
+
+            padding: 60px;
+            border-radius: 20px;
+
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+
+            width: 450px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #dddddd;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            width: 160px;
+            padding: 15px;
+
+            border: none;
+            border-radius: 10px;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .admin {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .customer {
+            background-color: #2196f3;
+            color: white;
+        }
+
+        button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .footer {
+            margin-top: 35px;
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        @media (max-width: 500px) {
+
+            .container {
+                width: 90%;
+                padding: 40px 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🚗 Car Rental System</h1>
+
+        <p class="subtitle">
+            Choose your portal to continue
+        </p>
+        <div class="buttons">
+
+            <a href="Adminlogin.html">
+            
+                <button class="admin">
+                    👨‍💼 Admin
+                </button>
+            </a>
+
+           <a href="Customerlogin.html">
+    <button class="customer">
+        👤 Customer
+    </button>
+</a>
+
+        </div>
+
+        <div class="footer">
+            © 2026 Car Rental System
+        </div>
+
+    </div>
+
+</body>
+
+</html>
